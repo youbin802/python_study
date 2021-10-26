@@ -1,0 +1,15 @@
+group : 매칭된 부분 반환
+re.match('a','aba') : 처음에 매칭되는지
+re.search('a','baa') : 처음이 아니더라도 포함되는지
+re.findall('a','aba') : 패턴과 일치되는 부분 찾기 (ex: re.findall('aab','aabaa')
+re.finditer('a','baa') : obj로 반환 / for문 써야함
+re.fullmatch('a','a') : 패턴과 문자열이 남는 부분 없이 완벽하게 일치하는지 검사
+
+-매칭 메타문자
+re.match('[abc]','a') : a가 있어서 패치(하나라도 포함되면 패치)
+re.match(['a-c'],'b') : 두 문자 사이의 범위
+re.match('[^a-c'],'b') : 범위에 있으면 안됨(기본과 반대)
+re.match('a.b','a4b') : Dot(.) -> 두 문자 사이에 값이 있는지
+re.match('a|b|c', 'apple') : 하나라도 있는지(search와 비슷함, *차이점을 모르겠음)
+
+re.search('short$',' Life is too short') : 문자열 마지막과 매치됨
