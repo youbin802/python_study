@@ -91,3 +91,9 @@ trans_rout_pos - 창고 및 공장의 위치 정보
 pulp - 최적화 모델을 작성
  ) lpsum = 선형 표현식 목록
 ortoolpy - 목적함수를 생성해 최적화 문제를 푼다.
+
+01장------
+describe : 각종 통계량 출력
+dt.strftime("%Y%m") : 연월 추출
+aggfunc : 집계 방법 ex( aggfunc='sum')
+pd.pivot_table : 행과 칼럼 지정해서 표를 만들기.
