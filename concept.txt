@@ -20,7 +20,7 @@ dataFrame
 
 loc
 행단위 데이터 읽는 것
-
+[데이터리스트, name(데이터 중 부제목)]
 merge
 데이터 합치기
 
@@ -97,3 +97,10 @@ describe : 각종 통계량 출력
 dt.strftime("%Y%m") : 연월 추출
 aggfunc : 집계 방법 ex( aggfunc='sum')
 pd.pivot_table : 행과 칼럼 지정해서 표를 만들기.
+
+02장------
+skipna : bool 값을 제외(t)하거나 포함(f)
+astype : 형변환
+to_timedelta : 숫자를 날짜로 변환
+unit="D" : day를 의미
+drop : 행,열 삭제
